@@ -201,38 +201,43 @@ header nav a:last-child {
 
 .welcome .topButton {
   background: #339EF9;
+  font-family:"Roboto";
   font-size: 24px;
+  font-weight: bold;
   color: white;
-  border: 1px solid white;
   border-radius: 100%;
   cursor: pointer;
   text-align: center;
-  width: 130px;
-  height: 130px;
+  width: 160px;
+  height: 160px;
   align-self: center;
   justify-self: center;
+  position: relative;
+  top: 70px;
 }
 
 @media (max-width: 500px) {
     .welcome .topButton {
         background: white;
         color: #339EF9;
-        border: 1px solid black;
     }
 }
 
 .mainContent .topContent .bottomButton {
     background: white;
+    font-family: "Roboto";
+    font-weight: bold;
     font-size: 24px;
     color: #339EF9;
-    border: 1px solid white;
     border-radius: 100%;
     cursor: pointer;
     text-align: center;
-    width: 130px;
-    height: 130px;
+    width: 160px;
+    height: 160px;
     align-self: center;
     justify-self: center;
+    position: relative;
+    top: 70px;
 }
 
 @media (max-width: 500px) {
@@ -271,6 +276,9 @@ header nav a:last-child {
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
     margin: 10px auto;
 }
 
@@ -290,14 +298,10 @@ header nav a:last-child {
     }
 }
 
-@media (max-width: 500px) {
-    .mainContent .topContent .indyContent h3 {
-        align-self: center;
-    }
-}
-
-.mainContent .topContent .indyContent #features {
+.mainContent .topContent #features {
     margin-bottom: 30px;
+    align-items: center;
+    padding-top: 100px;
 }
 
 @media (max-width: 500px) {
@@ -331,4 +335,15 @@ footer {
     footer {
         display: none;
     }
+}
+
+/* Make sure to toggle visibility for final product! */
+footer p {
+    visibility: hidden;
+}
+
+/* Images */
+
+.desktopXR {
+    position: relative;
 }
