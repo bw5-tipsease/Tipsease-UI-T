@@ -1,0 +1,54 @@
+header {
+    width: 100%;
+    max-width: 1024px;
+    height: 70px;
+    background-color: #FFFFFF;
+    box-shadow: 2px gray;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #F7F7F7;
+}
+
+header nav:first-child {
+    padding-left: 32px;
+}
+
+header nav:last-child {
+    padding-right: 32px;
+}
+
+header nav a {
+    font-size: 30px;
+    font-weight: 500;
+    color: #339EF9;
+    text-decoration: none;
+}
+
+header nav a:first-child {
+    margin-left: 10px;
+
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    header nav a:hover {
+        text-decoration: none;
+    }
+}
+
+header nav a:first-child {
+  margin-left: 0;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+}

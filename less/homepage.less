@@ -1,0 +1,151 @@
+.container {
+    width: 1024px;
+    margin: 0 auto; 
+    border: 1px solid black;
+  }
+  
+  @media (max-width: 500px) {
+      .container {
+          width: 100%;
+      }
+  }
+
+  .welcome {
+    width: 100%;
+    height: 813px;
+    background: url(/images/Desktop\ Graphic.svg);
+    background-size: contain 200%;
+    background-repeat: no-repeat;
+    background-position: 347px 76px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 500px) {
+    .welcome {
+        background-position: 50% 200px;
+        background-size: contain;
+    }
+}
+
+.welcome .welcomeText {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 50px;
+    justify-content: center;
+    align-content: center;
+    color: white; 
+}
+
+@media (max-width: 500px) {
+    .welcome .welcomeText {
+        padding-top: 48px;
+    }
+}
+
+@media (max-width: 500px) {
+    .welcome .welcomeText h1 {
+        color: #339EF9;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .welcome .welcomeText h2 {
+        color: black;
+    }
+}
+
+/* Main Content Section */
+
+.mainContent {
+    width: 100%;
+    background: url(/images/iPhoneXR.svg);
+    background-repeat: no-repeat;
+    background-position: -40px;
+    background-color: #F7F7F7;
+    color: #339EF9;
+}
+
+@media (max-width: 500px) {
+    .mainContent {
+        background: white;
+        padding-top: 50px;
+    }
+}
+
+.mainContent .topContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 290px;
+  width: 50%;
+  margin-left: 412px;
+  margin-right: 361px;
+}
+
+@media (max-width: 500px) {
+    .mainContent .topContent {
+        width: 73%;
+        padding-bottom: 20px;
+    }
+}
+
+.mainContent .topContent .indyContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+@media (max-width: 500px) {
+    .mainContent .topContent .indyContent {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainContent .topContent .indyContent p {
+        color: black;
+    }
+}
+
+.mainContent .topContent #features {
+    margin-bottom: 30px;
+    align-items: center;
+    font-size: 50px;
+}
+
+@media (max-width: 500px) {
+    .mainContent .topContent #features {
+        display: none;
+    }
+}
+
+.mainContent .topContent .indyContent h3 {
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 92px;
+}
+
+.mainContent .topContent .indyContent p {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 11px;
+    line-height: 24px;
+}
+
+@media (max-width: 500px) {
+    .mainContent .topContent .indyContent p {
+        font-weight: bold;
+    }
+}
