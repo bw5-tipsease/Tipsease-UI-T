@@ -3,6 +3,10 @@ header {
     height: 70px;
     background-color: #FFFFFF;
     box-shadow: 2px gray;
+
+    @media @mobile {
+        height: 50px;
+    }
 }
 
 header nav {
@@ -12,14 +16,27 @@ header nav {
   padding-top: 17px;
   padding-bottom: 18px;
   border-bottom: 1px solid #F7F7F7;
+
+  @media @mobile {
+      padding-top: 11px;
+      padding-bottom: 11px;
+  }
 }
 
 header nav:first-child {
     padding-left: 32px;
+
+    @media @mobile {
+        padding-left: 24px;
+    }
 }
 
 header nav:last-child {
     padding-right: 32px;
+
+    @media @mobile {
+        padding-right: 24px;
+    }
 }
 
 header nav a {
@@ -27,6 +44,10 @@ header nav a {
     font-weight: 500;
     color: #339EF9;
     text-decoration: none;
+
+    @media @mobile {
+        font-size: 24px;
+    }
 }
 
 header nav a:first-child {

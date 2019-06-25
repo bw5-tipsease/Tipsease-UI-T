@@ -142,6 +142,7 @@ h5 {
 }
 h1 {
   font-size: 36px;
+  font-weight: 500;
 }
 h2 {
   font-size: 24px;
@@ -190,9 +191,8 @@ h4 {
   align-self: center;
   justify-self: center;
   position: relative;
-  top: 226px;
-  left: 422px;
   border: none;
+  top: 150px;
   box-shadow: 0 18px 40px -12px rgba(212, 212, 212, 0.5);
 }
 @media (max-width: 500px) {
@@ -249,7 +249,8 @@ footer p {
   position: relative;
 }
 .container {
-  width: 1024px;
+  max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
   border: 1px solid black;
 }
@@ -271,6 +272,12 @@ footer p {
 }
 @media (max-width: 500px) {
   .welcome {
+    height: 600px;
+    background-position: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .welcome {
     background-position: 50% 200px;
     background-size: contain;
   }
@@ -284,11 +291,6 @@ footer p {
   justify-content: center;
   align-content: center;
   color: white;
-}
-@media (max-width: 500px) {
-  .welcome .welcomeText {
-    padding-top: 48px;
-  }
 }
 @media (max-width: 500px) {
   .welcome .welcomeText h1 {
@@ -310,6 +312,10 @@ footer p {
   background-position: -20px, 290px;
   background-color: #F7F7F7;
   color: #339EF9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 @media (max-width: 500px) {
   .mainContent {
@@ -385,6 +391,11 @@ header {
   background-color: #FFFFFF;
   box-shadow: 2px gray;
 }
+@media (max-width: 500px) {
+  header {
+    height: 50px;
+  }
+}
 header nav {
   display: flex;
   width: 100%;
@@ -393,17 +404,38 @@ header nav {
   padding-bottom: 18px;
   border-bottom: 1px solid #F7F7F7;
 }
+@media (max-width: 500px) {
+  header nav {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
 header nav:first-child {
   padding-left: 32px;
 }
+@media (max-width: 500px) {
+  header nav:first-child {
+    padding-left: 24px;
+  }
+}
 header nav:last-child {
   padding-right: 32px;
+}
+@media (max-width: 500px) {
+  header nav:last-child {
+    padding-right: 24px;
+  }
 }
 header nav a {
   font-size: 30px;
   font-weight: 500;
   color: #339EF9;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 24px;
+  }
 }
 header nav a:first-child {
   margin-left: 10px;
