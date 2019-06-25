@@ -147,24 +147,28 @@ h2 {
   font-size: 24px;
 }
 h3 {
-  font-size: 24px;
+  font-size: 50px;
+}
+h4 {
+  font-size: 21px;
 }
 .welcome .topButton {
   background: #339EF9;
   font-family: "Roboto";
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 35px;
+  font-weight: 500;
   color: white;
   border-radius: 100%;
   cursor: pointer;
   text-align: center;
   width: 180px;
   height: 180px;
-  align-self: center;
   border: none;
   position: relative;
-  top: 420px;
+  top: 462px;
+  left: 422px;
   background-image: linear-gradient(to left, #339EF9, #6CD6FA);
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 18px 40px -12px rgba(51, 158, 249, 0.4);
 }
 @media (max-width: 500px) {
   .welcome .topButton {
@@ -173,24 +177,26 @@ h3 {
     top: 0;
   }
 }
-.mainContent .topContent .bottomButton {
+.mainContent .bottomButton {
   background: white;
   font-family: "Roboto";
-  font-weight: bold;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 35px;
   color: #339EF9;
   border-radius: 100%;
   cursor: pointer;
-  text-align: center;
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   align-self: center;
   justify-self: center;
   position: relative;
-  top: 70px;
+  top: 226px;
+  left: 422px;
+  border: none;
+  box-shadow: 0 18px 40px -12px rgba(212, 212, 212, 0.5);
 }
 @media (max-width: 500px) {
-  .mainContent .topContent .bottomButton {
+  .mainContent .bottomButton {
     background: #339EF9;
     color: white;
     border: none;
@@ -198,14 +204,41 @@ h3 {
 }
 /* Footer */
 footer {
-  margin: 50px 0;
-  text-align: center;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 272px;
+  background-color: #FFFFFF;
+  border-bottom: none;
+  box-shadow: 0 -1px 4px 0 rgba(212, 212, 212, 0.5);
 }
 @media (max-width: 500px) {
   footer {
     display: none;
   }
+}
+footer nav {
+  height: 70px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border-top: none;
+  box-shadow: 0 -1px 4px 0 rgba(212, 212, 212, 0.5);
+}
+footer nav a:first-child {
+  padding-left: 32px;
+}
+footer nav a:last-child {
+  padding-right: 32px;
+}
+footer nav a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #339EF9;
+  text-decoration: none;
 }
 /* Make sure to toggle visibility for final product! */
 footer p {
@@ -271,9 +304,10 @@ footer p {
 /* Main Content Section */
 .mainContent {
   width: 100%;
+  height: 1277px;
   background: url(/images/iPhoneXR.svg);
   background-repeat: no-repeat;
-  background-position: -40px;
+  background-position: -20px, 290px;
   background-color: #F7F7F7;
   color: #339EF9;
 }
@@ -284,11 +318,11 @@ footer p {
   }
 }
 .mainContent .topContent {
+  width: 251px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 290px;
-  width: 50%;
   margin-left: 412px;
   margin-right: 361px;
 }
@@ -299,7 +333,7 @@ footer p {
   }
 }
 .mainContent .topContent .indyContent {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,15 +356,14 @@ footer p {
 }
 .mainContent .topContent #features {
   margin-bottom: 30px;
-  align-items: center;
-  font-size: 50px;
+  align-items: left;
 }
 @media (max-width: 500px) {
   .mainContent .topContent #features {
     display: none;
   }
 }
-.mainContent .topContent .indyContent h3 {
+.mainContent .topContent .indyContent h4 {
   font-size: 21px;
   font-weight: bold;
   padding-top: 92px;
@@ -348,7 +381,6 @@ footer p {
 }
 header {
   width: 100%;
-  max-width: 1024px;
   height: 70px;
   background-color: #FFFFFF;
   box-shadow: 2px gray;
