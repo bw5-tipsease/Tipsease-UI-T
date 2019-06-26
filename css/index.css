@@ -189,7 +189,7 @@ body {
   }
 }
 /* Footer */
-footer {
+.homeFooter {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -200,7 +200,7 @@ footer {
   box-shadow: 0 -1px 4px 0 rgba(212, 212, 212, 0.5);
 }
 @media (max-width: 500px) {
-  footer {
+  .homeFooter {
     display: none;
   }
 }
@@ -226,10 +226,6 @@ footer nav a {
   font-weight: bold;
   color: #339EF9;
   text-decoration: none;
-}
-/* Make sure to toggle visibility for final product! */
-footer p {
-  visibility: hidden;
 }
 /* Images */
 .desktopXR {
@@ -404,6 +400,9 @@ footer p {
     color: black;
   }
 }
+.container {
+  height: auto;
+}
 .aboutContainer {
   background: url(/images/Desktop\ About\ Graphic.svg);
   background-size: 568px 674px;
@@ -415,7 +414,7 @@ footer p {
   font-family: 'Roboto';
   font-size: 36px;
   color: #339EF9;
-  font-weight: 500;
+  font-weight: bold;
   margin-left: 72px;
   padding-top: 480px;
 }
@@ -427,8 +426,29 @@ footer p {
   flex-direction: column;
 }
 .aboutContainer .aboutWrapper .smallContentContainer {
-  border: 1px solid black;
   display: flex;
+  justify-content: space-between;
+}
+.aboutContainer .aboutWrapper .smallContentContainer .aboutHeader {
+  font-family: 'Nunito';
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: 0.53px;
+  color: #4E4E4E;
+  width: 20%;
+}
+.aboutContainer .aboutWrapper .smallContentContainer .aboutContent {
+  font-family: 'Nunito';
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: 0.53px;
+  color: #4E4E4E;
+  width: 60%;
+  line-height: 32px;
+  padding-bottom: 44px;
+}
+.aboutContainer .aboutWrapper .smallContentContainer #lastEntry {
+  padding-bottom: 115px;
 }
 .meetTheTeam {
   background: url(/images/People.svg);
@@ -448,15 +468,22 @@ footer p {
 .meetTheTeam .team {
   display: flex;
   flex-direction: column;
-  padding-left: 418px;
-}
-.meetTheTeam .team #victor {
-  background-size: 243px 205px;
-  background-repeat: no-repeat;
-  background-position: 50px 100px;
+  width: 80%;
 }
 .meetTheTeam .team .teamMembers {
-  padding-top: 152px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  padding-left: 183px;
+}
+.meetTheTeam .team .teamMembers:first-child {
+  padding-top: 50px;
+}
+.meetTheTeam .team .teamMembers .profileContainer {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 .meetTheTeam .team .teamMembers .name {
   font-family: 'Open Sans';
@@ -526,9 +553,6 @@ header nav a {
     font-size: 24px;
   }
 }
-header nav a:first-child {
-  margin-left: 10px;
-}
 header nav a:hover {
   text-decoration: underline;
 }
@@ -536,10 +560,4 @@ header nav a:hover {
   header nav a:hover {
     text-decoration: none;
   }
-}
-header nav a:first-child {
-  margin-left: 0;
-}
-header nav a:last-child {
-  margin-right: 0;
 }

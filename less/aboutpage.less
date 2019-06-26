@@ -1,3 +1,7 @@
+.container {
+    height: auto;
+}
+
 // .box {
 //     width: 773px;
 //     height: 661px;
@@ -34,7 +38,7 @@
     font-family: 'Roboto';
     font-size: 36px;
     color: #339EF9;
-    font-weight: 500;
+    font-weight: bold;
     margin-left: 72px;
     padding-top: 480px;
 }
@@ -48,11 +52,25 @@
 }
 
 .aboutContainer .aboutWrapper .smallContentContainer {
-    border: 1px solid black;
     display: flex;
+    justify-content: space-between;
 }
 
+.aboutContainer .aboutWrapper .smallContentContainer .aboutHeader {
+    .aboutFontStyling();
+    width: 20%;
+}
 
+.aboutContainer .aboutWrapper .smallContentContainer .aboutContent {
+    .aboutFontStyling();
+    width: 60%;
+    line-height: 32px;
+    padding-bottom: 44px;
+}
+
+.aboutContainer .aboutWrapper .smallContentContainer #lastEntry {
+    padding-bottom: 115px;
+}
 
 .meetTheTeam {
     background: url(/images/People.svg);
@@ -74,18 +92,25 @@
 .meetTheTeam .team {
     display: flex;
     flex-direction: column;
-    padding-left: 418px;
-}
-
-.meetTheTeam .team #victor {
-    // background: url(/images/Victor.svg);
-    background-size: 243px 205px;
-    background-repeat: no-repeat;
-    background-position: 50px 100px;
+    width: 80%;
 }
 
 .meetTheTeam .team .teamMembers {
-    padding-top: 152px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-left: 183px;
+
+    &:first-child  {
+        padding-top: 50px;
+    }
+}
+
+.meetTheTeam .team .teamMembers .profileContainer {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
 }
 
 
