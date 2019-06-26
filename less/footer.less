@@ -1,6 +1,6 @@
 /* Footer */
 
-footer {
+.homeFooter {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -8,12 +8,9 @@ footer {
     height: 272px;
     background-color: #FFFFFF;
     border-bottom: none;
-    box-shadow: 0 -1px 4px 0 rgba(rgba(212,212,212,0.5))
+    box-shadow: 0 -1px 4px 0 rgba(rgba(212,212,212,0.5));
     
-}
-
-@media (max-width: 500px) {
-    footer {
+    @media @mobile {
         display: none;
     }
 }
@@ -46,13 +43,10 @@ footer nav a {
     text-decoration: none;
 }
 
-/* Make sure to toggle visibility for final product! */
-footer p {
-    visibility: hidden;
-}
-
 /* Images */
 
 .desktopXR {
     position: relative;
 }
+
+// About Page Footer
