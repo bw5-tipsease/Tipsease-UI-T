@@ -153,7 +153,7 @@ h3 {
 h4 {
   font-size: 21px;
 }
-.welcome .topButton {
+.welcome-container .top-button {
   background: #339EF9;
   font-family: "Roboto";
   font-size: 35px;
@@ -172,13 +172,13 @@ h4 {
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 18px 40px -12px rgba(51, 158, 249, 0.4);
 }
 @media (max-width: 500px) {
-  .welcome .topButton {
+  .welcome-container .top-button {
     background: white;
     color: #339EF9;
     top: 0;
   }
 }
-.mainContent .bottomButton {
+.main-content .bottom-button {
   background: white;
   font-family: "Roboto";
   font-weight: 500;
@@ -196,7 +196,7 @@ h4 {
   box-shadow: 0 18px 40px -12px rgba(212, 212, 212, 0.5);
 }
 @media (max-width: 500px) {
-  .mainContent .bottomButton {
+  .main-content .bottom-button {
     background: #339EF9;
     color: white;
     border: none;
@@ -252,14 +252,13 @@ footer p {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid black;
 }
 @media (max-width: 500px) {
   .container {
     width: 100%;
   }
 }
-.welcome {
+.welcome-container {
   width: 100%;
   height: 813px;
   background: url(/images/Desktop\ Graphic.svg);
@@ -271,18 +270,14 @@ footer p {
   flex-direction: column;
 }
 @media (max-width: 500px) {
-  .welcome {
+  .welcome-container {
     height: 600px;
     background-position: 50%;
-  }
-}
-@media (max-width: 500px) {
-  .welcome {
     background-position: 50% 200px;
     background-size: contain;
   }
 }
-.welcome .welcomeText {
+.welcome-container .welcome-content {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
@@ -293,18 +288,13 @@ footer p {
   color: white;
 }
 @media (max-width: 500px) {
-  .welcome .welcomeText h1 {
-    color: #339EF9;
-    margin-bottom: 0px;
-  }
-}
-@media (max-width: 500px) {
-  .welcome .welcomeText h2 {
-    color: black;
+  .welcome-container .welcome-content {
+    margin-left: 56px;
+    padding-top: 38px;
   }
 }
 /* Main Content Section */
-.mainContent {
+.main-content {
   width: 100%;
   height: 1277px;
   background: url(/images/iPhoneXR.svg);
@@ -318,12 +308,12 @@ footer p {
   align-content: center;
 }
 @media (max-width: 500px) {
-  .mainContent {
+  .main-content {
     background: white;
     padding-top: 50px;
   }
 }
-.mainContent .topContent {
+.main-content .mission-statement {
   width: 251px;
   display: flex;
   flex-direction: column;
@@ -333,12 +323,12 @@ footer p {
   margin-right: 361px;
 }
 @media (max-width: 500px) {
-  .mainContent .topContent {
+  .main-content .mission-statement {
     width: 73%;
     padding-bottom: 20px;
   }
 }
-.mainContent .topContent .indyContent {
+.main-content .mission-statement .indy-content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -347,7 +337,7 @@ footer p {
   align-content: center;
 }
 @media (max-width: 500px) {
-  .mainContent .topContent .indyContent {
+  .main-content .mission-statement .indy-content {
     width: 100%;
     justify-content: center;
     align-content: center;
@@ -356,32 +346,32 @@ footer p {
   }
 }
 @media (max-width: 500px) {
-  .mainContent .topContent .indyContent p {
+  .main-content .mission-statement .indy-content #indy-info {
     color: black;
   }
 }
-.mainContent .topContent #features {
+.main-content .mission-statement #features {
   margin-bottom: 30px;
   align-items: left;
 }
 @media (max-width: 500px) {
-  .mainContent .topContent #features {
+  .main-content .mission-statement #features {
     display: none;
   }
 }
-.mainContent .topContent .indyContent h4 {
+.main-content .mission-statement .indy-content #indy-header {
   font-size: 21px;
   font-weight: bold;
   padding-top: 92px;
 }
-.mainContent .topContent .indyContent p {
+.main-content .mission-statement .indy-content #indy-info {
   font-size: 16px;
   font-weight: bold;
   padding-top: 11px;
   line-height: 24px;
 }
 @media (max-width: 500px) {
-  .mainContent .topContent .indyContent p {
+  .main-content .mission-statement .indy-content #indy-info {
     font-weight: bold;
   }
 }
