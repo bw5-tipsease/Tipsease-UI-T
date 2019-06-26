@@ -1,0 +1,169 @@
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto; 
+
+    @media @mobile {
+        width: 100%;
+        height: auto;
+    }
+}
+
+  .welcomeContainer {
+    width: 100%;
+    height: 813px;
+    display: flex;
+    flex-direction: column;
+    background: url(/images/Desktop\ Graphic.svg);
+    background-size: contain 200%;
+    background-repeat: no-repeat;
+    background-position: 347px 76px;
+    background-color: white;
+
+    @media @mobile {
+        height: 600px;
+        background-position: 50%;
+        background-position: 50% 200px;
+        background-size: contain;
+    }
+}
+
+.welcomeContainer .welcomeContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 50px;
+    justify-content: center;
+    align-content: center;
+    color: white; 
+
+    @media @mobile {
+        margin-left: 56px;
+        padding-top: 38px;
+    }
+}
+
+.welcomeContainer .welcomeContent #title {
+    font-family: 'Open Sans';
+    font-size: 64px;
+    font-weight: 500;
+    letter-spacing: .87px;
+    color: #339EF9;
+
+    @media @mobile {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: .80px;
+    }
+}
+
+.welcomeContainer .welcomeContent #subtitle {
+    font-family: 'Nunito';
+    font-size: 40px;
+    font-weight: normal;
+    color: #339EF9;
+    padding-top: 4px;
+
+    @media @mobile {
+        font-size: 24px;
+        color: black;
+    }
+}
+
+/* Main Content Section */
+
+.mainContent {
+    width: 100%;
+    height: 1277px;
+    background: url(/images/iPhoneXR.svg);
+    background-repeat: no-repeat;
+    background-position: -20px, 290px;
+    background-color: #F7F7F7;
+    color: #339EF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    @media @mobile {
+        height: auto;
+        background: white;
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+.mainContent .missionStatement {
+    width: 251px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 290px;
+    margin-left: 412px;
+    margin-right: 361px;
+
+    @media @mobile {
+        width: 100%;
+        padding-top: 120px;
+        margin: auto;
+    }
+}
+
+.mainContent .missionStatement .indyContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+
+    @media @mobile {
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+}
+
+.mainContent .missionStatement #feature {
+    font-family: 'Open Sans';
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    align-items: left;
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+.mainContent .missionStatement .indyContent .indyHeader {
+    font-family: 'Open Sans';
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 92px;
+
+    @media @mobile {
+        font-size: 24px;
+        font-weight: 600;
+        padding-top: 38.5px;
+    }
+}
+
+.mainContent .missionStatement .indyContent .indyInfo {
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 11px;
+    line-height: 24px;
+
+    @media @mobile {
+        font-size: 18px;
+        font-weight: normal;
+        padding-top: 8px;
+        color: black;
+    }
+}
