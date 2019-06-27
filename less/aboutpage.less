@@ -2,30 +2,6 @@
     height: auto;
 }
 
-// .box {
-//     width: 773px;
-//     height: 661px;
-//     opacity: 100%;
-//     background-color: #339EF9;
-//     position: relative;
-//     border-radius: 0 0 100% 0;
-// }
-
-// .box::before {
-//     content: "";
-//     background-color: white;
-//     position: absolute;
-//     background-color: red;
-//     display: block;
-//     top: -70px;
-//     left: 67%;
-//     width: 230px;
-//     height: 340px;
-//     z-index: 1;
-//     transform: rotateZ(7deg);
-//     border-radius: 0 0 100% 0;
-// }
-
 .aboutContainer {
     background: url(/images/Desktop\ About\ Graphic.svg);
     background-size: 568px 674px;
@@ -127,8 +103,9 @@
     @media @mobile {
         font-size: 36px;
         font-weight: 600;
-
+        margin-left: 0px;
         padding-top: 20px;
+        text-align: center;
     }
 }
 
@@ -173,11 +150,17 @@
     font-size: 36px;
     color: #339EF9;
     font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 
     @media @mobile {
         font-size: 24px;
         font-weight: 600;
         width: 100%;
+        text-align: center;
     }
 }
 
@@ -196,6 +179,8 @@
         font-size: 18px;
         font-weight: normal;
         width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
     }
 }
 
