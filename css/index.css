@@ -151,7 +151,6 @@ body {
   position: relative;
   top: 375px;
   align-self: center;
-  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 18px 40px -12px rgba(51, 158, 249, 0.4);
 }
 @media (max-width: 500px) {
   .welcomeContainer .topButton {
@@ -528,7 +527,9 @@ footer nav a {
   .meetTheTeam h2 {
     font-size: 36px;
     font-weight: 600;
+    margin-left: 0px;
     padding-top: 20px;
+    text-align: center;
   }
 }
 .meetTheTeam .team {
@@ -569,12 +570,17 @@ footer nav a {
   font-size: 36px;
   color: #339EF9;
   font-weight: bold;
+  text-decoration: none;
+}
+.meetTheTeam .team .teamMembers .name:hover {
+  text-decoration: underline;
 }
 @media (max-width: 500px) {
   .meetTheTeam .team .teamMembers .name {
     font-size: 24px;
     font-weight: 600;
     width: 100%;
+    text-align: center;
   }
 }
 .meetTheTeam .team .teamMembers #firstName {
@@ -592,6 +598,8 @@ footer nav a {
     font-size: 18px;
     font-weight: normal;
     width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
   }
 }
 header {
