@@ -32,6 +32,11 @@
     background-repeat: no-repeat;
     background-position: 100% -70px;
     background-color: white;
+
+    @media @mobile {
+        background-size: contain;
+        background-position: 100% 0px;
+    }
 }
 
 .aboutContainer .aboutTitle #title {
@@ -49,16 +54,36 @@
     padding-top: 39px;
     display: flex;
     flex-direction: column;
+
+    @media @mobile {
+        width: 60%;
+        align-items: center;
+    }
 }
 
 .aboutContainer .aboutWrapper .smallContentContainer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
+    @media @mobile {
+        flex-direction: column;
+        width: 100%;
+        align-items: space-around;
+    }
 }
 
 .aboutContainer .aboutWrapper .smallContentContainer .aboutHeader {
     .aboutFontStyling();
     width: 20%;
+
+    @media @mobile {
+        font-family: "Open Sans";
+        font-weight: 600;
+        line-height: 31px;
+        color: #339EF9;
+        width: 100%;
+    }
 }
 
 .aboutContainer .aboutWrapper .smallContentContainer .aboutContent {
@@ -66,6 +91,13 @@
     width: 60%;
     line-height: 32px;
     padding-bottom: 44px;
+
+    @media @mobile {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: normal;
+        width: 100%;
+    }
 }
 
 .aboutContainer .aboutWrapper .smallContentContainer #lastEntry {
@@ -78,6 +110,10 @@
     background-size: 663px 227px contain;
     background-repeat: no-repeat;
     background-position: 50% 100px;
+
+    @media @mobile {
+        background: white;
+    }
 }
 
 .meetTheTeam h2 {
@@ -87,12 +123,23 @@
     font-weight: bold;
     margin-left: 72px;
     padding-top: 460px;
+
+    @media @mobile {
+        font-size: 36px;
+        font-weight: 600;
+
+        padding-top: 20px;
+    }
 }
 
 .meetTheTeam .team {
     display: flex;
     flex-direction: column;
     width: 80%;
+
+    @media @mobile {
+        width: 100%;
+    }
 }
 
 .meetTheTeam .team .teamMembers {
@@ -103,6 +150,13 @@
 
     &:first-child  {
         padding-top: 50px;
+    }
+
+    @media @mobile {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 0px;
+        margin: auto;
     }
 }
 
@@ -119,6 +173,12 @@
     font-size: 36px;
     color: #339EF9;
     font-weight: bold;
+
+    @media @mobile {
+        font-size: 24px;
+        font-weight: 600;
+        width: 100%;
+    }
 }
 
 .meetTheTeam .team .teamMembers #firstName {
@@ -131,5 +191,11 @@
     color: #4E4E4E;
     font-weight: bold;
     padding-top: 19px;
+
+    @media @mobile {
+        font-size: 18px;
+        font-weight: normal;
+        width: 100%;
+    }
 }
 
