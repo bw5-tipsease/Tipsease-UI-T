@@ -1,32 +1,55 @@
 .container {
+    max-width: 1024px;
+    width: 100%;
     height: auto;
 }
 
-.aboutContainer {
-    background: url(/images/Desktop\ About\ Graphic.svg);
-    background-size: 568px 674px;
-    background-repeat: no-repeat;
-    background-position: 100% -70px;
-    background-color: white;
-
-    @media @mobile {
-        background-size: contain;
-        background-position: 100% 0px;
+@media @mobile {
+    .blob {
+        display: none;
     }
 }
 
+.aboutContainer {
+    position: relative;
+
+    @media @mobile {
+        position: static;
+    }
+
+    .aboutImg {
+        position: absolute;
+        top: 42px;
+        left: 450px;
+        width: 541px;
+        height: 547px;
+
+        @media @mobile {
+        position: static;
+        height: 600px;
+        background-position: 50%;
+        background-position: 50% 150px;
+        background-size: contain;
+        }
+    }  
+}     
+
 .aboutContainer .aboutTitle #title {
-    font-family: 'Roboto';
-    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
     color: #339EF9;
     font-weight: bold;
-    margin-left: 72px;
-    padding-top: 480px;
+    margin-left: 130px;
+    padding-top: 530px;
+
+    @media @mobile {
+        padding-top: 0px;
+    }
 }
 
 .aboutContainer .aboutWrapper {
     width: 64%;
-    margin-left: 72px;
+    margin-left: 130px;
     padding-top: 39px;
     display: flex;
     flex-direction: column;
@@ -54,7 +77,7 @@
     width: 20%;
 
     @media @mobile {
-        font-family: "Open Sans";
+        font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         line-height: 31px;
         color: #339EF9;
@@ -69,7 +92,7 @@
     padding-bottom: 44px;
 
     @media @mobile {
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: 22px;
         letter-spacing: normal;
         width: 100%;
@@ -81,7 +104,7 @@
 }
 
 .meetTheTeam {
-    background: url(/images/People.svg);
+    background: url(../images/People.svg);
     background-color: #E9E8E8;
     background-size: 663px 227px contain;
     background-repeat: no-repeat;
@@ -93,15 +116,15 @@
 }
 
 .meetTheTeam h2 {
-    font-family: 'Open Sans';
-    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5rem;
     color: #339EF9;
     font-weight: bold;
     margin-left: 72px;
     padding-top: 460px;
 
     @media @mobile {
-        font-size: 36px;
+        font-size: 3.6rem;
         font-weight: 600;
         margin-left: 0px;
         padding-top: 20px;
@@ -146,8 +169,8 @@
 
 
 .meetTheTeam .team .teamMembers .name {
-    font-family: 'Open Sans';
-    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.6rem;
     color: #339EF9;
     font-weight: bold;
     text-decoration: none;
@@ -157,7 +180,7 @@
     }
 
     @media @mobile {
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 600;
         width: 100%;
         text-align: center;
@@ -169,14 +192,14 @@
 }
 
 .meetTheTeam .team .teamMembers .role {
-    font-family: 'Nunito';
-    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.4rem;
     color: #4E4E4E;
     font-weight: bold;
     padding-top: 19px;
 
     @media @mobile {
-        font-size: 18px;
+        font-size: 1.8rem;
         font-weight: normal;
         width: 100%;
         text-align: center;
