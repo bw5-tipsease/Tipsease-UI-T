@@ -89,7 +89,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: 'inherit';
   vertical-align: baseline;
   box-sizing: border-box;
@@ -138,8 +138,8 @@ body {
 }
 .welcomeContainer .topButton {
   background: #339EF9;
-  font-family: 'Open Sans';
-  font-size: 35px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.5rem;
   font-weight: 500;
   color: white;
   border-radius: 100%;
@@ -149,22 +149,26 @@ body {
   height: 180px;
   border: none;
   position: relative;
+  padding: 0 10px;
   top: 375px;
   align-self: center;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 18px 40px -12px rgba(51, 158, 249, 0.4);
 }
 @media (max-width: 500px) {
   .welcomeContainer .topButton {
     background: white;
-    font-size: 30px;
+    font-size: 3rem;
     color: #339EF9;
-    top: 335px;
+    top: 230px;
+    padding: 0 20px;
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
   }
 }
 .mainContent .bottomButton {
   background: white;
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  font-size: 35px;
+  font-size: 3.5rem;
   color: #339EF9;
   border-radius: 100%;
   cursor: pointer;
@@ -176,15 +180,16 @@ body {
   border: none;
   top: 90px;
   box-shadow: 0 18px 40px -12px rgba(212, 212, 212, 0.5);
+  padding: 0 10px;
 }
 @media (max-width: 500px) {
   .mainContent .bottomButton {
     background: #339EF9;
-    font-size: 30px;
+    font-size: 3rem;
     color: white;
     border: none;
     top: 55px;
-    padding-bottom: 20px;
+    padding: 0 20px;
   }
 }
 /* Footer */
@@ -234,6 +239,7 @@ footer nav a {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 @media (max-width: 500px) {
   .container {
@@ -246,7 +252,7 @@ footer nav a {
   height: 813px;
   display: flex;
   flex-direction: column;
-  background: url(/images/Desktop\ Graphic.svg);
+  background: url(../images/Desktop-Graphic.svg);
   background-size: contain 200%;
   background-repeat: no-repeat;
   background-position: 347px 76px;
@@ -256,7 +262,7 @@ footer nav a {
   .welcomeContainer {
     height: 600px;
     background-position: 50%;
-    background-position: 50% 200px;
+    background-position: 50% 150px;
     background-size: contain;
   }
 }
@@ -277,31 +283,34 @@ footer nav a {
   }
 }
 .welcomeContainer .welcomeContent #title {
-  font-family: 'Open Sans';
-  font-size: 64px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 6.4rem;
   font-weight: bold;
-  line-height: 87px;
+  line-height: 8.7rem;
   letter-spacing: 0.8px;
-  color: #339EF9;
+  color: white;
+  z-index: 1;
 }
 @media (max-width: 500px) {
   .welcomeContainer .welcomeContent #title {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 600;
     line-height: 49px;
+    color: #339EF9;
   }
 }
 .welcomeContainer .welcomeContent #subtitle {
-  font-family: "Nunito";
-  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 4rem;
   font-weight: normal;
   line-height: 54px;
-  color: #339EF9;
+  color: white;
   padding-top: 4px;
+  z-index: 1;
 }
 @media (max-width: 500px) {
   .welcomeContainer .welcomeContent #subtitle {
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 32px;
     color: #4E4E4E;
   }
@@ -309,7 +318,7 @@ footer nav a {
 /* Main Content Section */
 .mainContent {
   width: 100%;
-  height: 1277px;
+  height: auto;
   background-color: #F7F7F7;
   color: #339EF9;
   display: flex;
@@ -335,14 +344,14 @@ footer nav a {
 @media (max-width: 500px) {
   .mainContent .middleContainer {
     width: 75%;
-    padding-top: 80px;
+    padding-top: 30px;
   }
 }
-.mainContent .middleContainer img {
+.mainContent .middleContainer .iphoneImg {
   size: 447px 926px;
 }
 @media (max-width: 500px) {
-  .mainContent .middleContainer img {
+  .mainContent .middleContainer .iphoneImg {
     display: none;
   }
 }
@@ -356,7 +365,6 @@ footer nav a {
 @media (max-width: 500px) {
   .mainContent .missionStatement {
     width: 100%;
-    padding-top: 120px;
     margin: auto;
   }
 }
@@ -376,8 +384,8 @@ footer nav a {
   }
 }
 .mainContent .missionStatement #feature {
-  font-family: 'Open Sans';
-  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
   font-weight: bold;
   line-height: 64px;
   margin-bottom: 30px;
@@ -389,11 +397,11 @@ footer nav a {
   }
 }
 .mainContent .missionStatement .indyContent .indyHeader {
-  font-family: 'Open Sans';
-  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.4rem;
   font-weight: bold;
   line-height: 31px;
-  padding-top: 92px;
+  padding-top: 40px;
 }
 @media (max-width: 500px) {
   .mainContent .missionStatement .indyContent .indyHeader {
@@ -402,11 +410,10 @@ footer nav a {
   }
 }
 .mainContent .missionStatement .indyContent .indyInfo {
-  font-family: 'Nunito';
-  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 24px;
-  padding-top: 11px;
   color: #4E4E4E;
 }
 @media (max-width: 500px) {
@@ -417,32 +424,55 @@ footer nav a {
   }
 }
 .container {
+  max-width: 1024px;
+  width: 100%;
   height: auto;
 }
+@media (max-width: 500px) {
+  .blob {
+    display: none;
+  }
+}
 .aboutContainer {
-  background: url(/images/Desktop\ About\ Graphic.svg);
-  background-size: 568px 674px;
-  background-repeat: no-repeat;
-  background-position: 100% -70px;
-  background-color: white;
+  position: relative;
 }
 @media (max-width: 500px) {
   .aboutContainer {
+    position: static;
+  }
+}
+.aboutContainer .aboutImg {
+  position: absolute;
+  top: 42px;
+  left: 450px;
+  width: 541px;
+  height: 547px;
+}
+@media (max-width: 500px) {
+  .aboutContainer .aboutImg {
+    position: static;
+    height: 600px;
+    background-position: 50%;
+    background-position: 50% 150px;
     background-size: contain;
-    background-position: 100% 0px;
   }
 }
 .aboutContainer .aboutTitle #title {
-  font-family: 'Roboto';
-  font-size: 36px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
   color: #339EF9;
   font-weight: bold;
-  margin-left: 72px;
-  padding-top: 480px;
+  margin-left: 130px;
+  padding-top: 530px;
+}
+@media (max-width: 500px) {
+  .aboutContainer .aboutTitle #title {
+    padding-top: 0px;
+  }
 }
 .aboutContainer .aboutWrapper {
   width: 64%;
-  margin-left: 72px;
+  margin-left: 130px;
   padding-top: 39px;
   display: flex;
   flex-direction: column;
@@ -475,7 +505,7 @@ footer nav a {
 }
 @media (max-width: 500px) {
   .aboutContainer .aboutWrapper .smallContentContainer .aboutHeader {
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     line-height: 31px;
     color: #339EF9;
@@ -494,7 +524,7 @@ footer nav a {
 }
 @media (max-width: 500px) {
   .aboutContainer .aboutWrapper .smallContentContainer .aboutContent {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 22px;
     letter-spacing: normal;
     width: 100%;
@@ -504,7 +534,7 @@ footer nav a {
   padding-bottom: 115px;
 }
 .meetTheTeam {
-  background: url(/images/People.svg);
+  background: url(../images/People.svg);
   background-color: #E9E8E8;
   background-size: 663px 227px contain;
   background-repeat: no-repeat;
@@ -516,8 +546,8 @@ footer nav a {
   }
 }
 .meetTheTeam h2 {
-  font-family: 'Open Sans';
-  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 5rem;
   color: #339EF9;
   font-weight: bold;
   margin-left: 72px;
@@ -525,7 +555,7 @@ footer nav a {
 }
 @media (max-width: 500px) {
   .meetTheTeam h2 {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 600;
     margin-left: 0px;
     padding-top: 20px;
@@ -566,8 +596,8 @@ footer nav a {
   align-content: flex-start;
 }
 .meetTheTeam .team .teamMembers .name {
-  font-family: 'Open Sans';
-  font-size: 36px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.6rem;
   color: #339EF9;
   font-weight: bold;
   text-decoration: none;
@@ -577,7 +607,7 @@ footer nav a {
 }
 @media (max-width: 500px) {
   .meetTheTeam .team .teamMembers .name {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     width: 100%;
     text-align: center;
@@ -587,15 +617,15 @@ footer nav a {
   padding-top: 34px;
 }
 .meetTheTeam .team .teamMembers .role {
-  font-family: 'Nunito';
-  font-size: 24px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.4rem;
   color: #4E4E4E;
   font-weight: bold;
   padding-top: 19px;
 }
 @media (max-width: 500px) {
   .meetTheTeam .team .teamMembers .role {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: normal;
     width: 100%;
     text-align: center;
@@ -606,7 +636,16 @@ header {
   width: 100%;
   height: 70px;
   background-color: #FFFFFF;
-  box-shadow: 2px gray;
+  box-shadow: 0 3px 4px -6px #000000;
+}
+header .blob {
+  position: absolute;
+  z-index: 0;
+}
+@media (max-width: 500px) {
+  header .blob {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   header {
@@ -616,48 +655,36 @@ header {
 header nav {
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: space-between;
-  padding-top: 17px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid #F7F7F7;
+  padding: 17px 32px 18px;
+  border-bottom: 1px solid white;
 }
 @media (max-width: 500px) {
   header nav {
-    padding-top: 11px;
-    padding-bottom: 11px;
-  }
-}
-header nav:first-child {
-  padding-left: 32px;
-}
-@media (max-width: 500px) {
-  header nav:first-child {
-    padding-left: 24px;
-  }
-}
-header nav:last-child {
-  padding-right: 32px;
-}
-@media (max-width: 500px) {
-  header nav:last-child {
-    padding-right: 24px;
+    padding: 11px 24px;
   }
 }
 header nav a {
-  font-family: 'Open Sans';
-  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
   font-weight: normal;
   letter-spacing: -0.96px;
   line-height: 41px;
-  color: #339EF9;
+  color: white;
   text-decoration: none;
+  z-index: 2;
+}
+header nav a:last-child {
+  color: #339EF9;
 }
 @media (max-width: 500px) {
   header nav a {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     letter-spacing: -0.77px;
     line-height: 33px;
+    color: #339EF9;
   }
 }
 header nav a:hover {
