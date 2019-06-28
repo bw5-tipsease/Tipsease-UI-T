@@ -1,26 +1,6 @@
-// .box {
-//     width: 773px;
-//     height: 661px;
-//     opacity: 100%;
-//     background-color: #339EF9;
-//     position: relative;
-//     border-radius: 0 0 100% 0;
-// }
-
-// .box::before {
-//     content: "";
-//     background-color: white;
-//     position: absolute;
-//     background-color: red;
-//     display: block;
-//     top: -70px;
-//     left: 67%;
-//     width: 230px;
-//     height: 340px;
-//     z-index: 1;
-//     transform: rotateZ(7deg);
-//     border-radius: 0 0 100% 0;
-// }
+.container {
+    height: auto;
+}
 
 .aboutContainer {
     background: url(/images/Desktop\ About\ Graphic.svg);
@@ -28,13 +8,18 @@
     background-repeat: no-repeat;
     background-position: 100% -70px;
     background-color: white;
+
+    @media @mobile {
+        background-size: contain;
+        background-position: 100% 0px;
+    }
 }
 
 .aboutContainer .aboutTitle #title {
     font-family: 'Roboto';
     font-size: 36px;
     color: #339EF9;
-    font-weight: 500;
+    font-weight: bold;
     margin-left: 72px;
     padding-top: 480px;
 }
@@ -45,14 +30,55 @@
     padding-top: 39px;
     display: flex;
     flex-direction: column;
+
+    @media @mobile {
+        width: 60%;
+        align-items: center;
+    }
 }
 
 .aboutContainer .aboutWrapper .smallContentContainer {
-    border: 1px solid black;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media @mobile {
+        flex-direction: column;
+        width: 100%;
+        align-items: space-around;
+    }
 }
 
+.aboutContainer .aboutWrapper .smallContentContainer .aboutHeader {
+    .aboutFontStyling();
+    width: 20%;
 
+    @media @mobile {
+        font-family: "Open Sans";
+        font-weight: 600;
+        line-height: 31px;
+        color: #339EF9;
+        width: 100%;
+    }
+}
+
+.aboutContainer .aboutWrapper .smallContentContainer .aboutContent {
+    .aboutFontStyling();
+    width: 60%;
+    line-height: 32px;
+    padding-bottom: 44px;
+
+    @media @mobile {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: normal;
+        width: 100%;
+    }
+}
+
+.aboutContainer .aboutWrapper .smallContentContainer #lastEntry {
+    padding-bottom: 115px;
+}
 
 .meetTheTeam {
     background: url(/images/People.svg);
@@ -60,6 +86,10 @@
     background-size: 663px 227px contain;
     background-repeat: no-repeat;
     background-position: 50% 100px;
+
+    @media @mobile {
+        background: white;
+    }
 }
 
 .meetTheTeam h2 {
@@ -69,23 +99,49 @@
     font-weight: bold;
     margin-left: 72px;
     padding-top: 460px;
+
+    @media @mobile {
+        font-size: 36px;
+        font-weight: 600;
+        margin-left: 0px;
+        padding-top: 20px;
+        text-align: center;
+    }
 }
 
 .meetTheTeam .team {
     display: flex;
     flex-direction: column;
-    padding-left: 418px;
-}
+    width: 80%;
 
-.meetTheTeam .team #victor {
-    // background: url(/images/Victor.svg);
-    background-size: 243px 205px;
-    background-repeat: no-repeat;
-    background-position: 50px 100px;
+    @media @mobile {
+        width: 100%;
+    }
 }
 
 .meetTheTeam .team .teamMembers {
-    padding-top: 152px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-left: 183px;
+
+    &:first-child  {
+        padding-top: 50px;
+    }
+
+    @media @mobile {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 0px;
+        margin: auto;
+    }
+}
+
+.meetTheTeam .team .teamMembers .profileContainer {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
 }
 
 
@@ -94,6 +150,18 @@
     font-size: 36px;
     color: #339EF9;
     font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    @media @mobile {
+        font-size: 24px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .meetTheTeam .team .teamMembers #firstName {
@@ -106,5 +174,13 @@
     color: #4E4E4E;
     font-weight: bold;
     padding-top: 19px;
+
+    @media @mobile {
+        font-size: 18px;
+        font-weight: normal;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
 }
 

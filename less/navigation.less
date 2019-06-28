@@ -21,54 +21,43 @@ header nav {
       padding-top: 11px;
       padding-bottom: 11px;
   }
-}
-
-header nav:first-child {
+&:first-child {
     padding-left: 32px;
 
     @media @mobile {
         padding-left: 24px;
     }
 }
-
-header nav:last-child {
+&:last-child {
     padding-right: 32px;
 
     @media @mobile {
         padding-right: 24px;
     }
 }
+}
 
 header nav a {
     font-family: 'Open Sans';
     font-size: 30px;
+    font-weight: normal;
+    letter-spacing: -0.96px;
+    line-height: 41px;
     color: #339EF9;
     text-decoration: none;
 
     @media @mobile {
         font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -0.77px;
+        line-height: 33px;
     }
-}
 
-header nav a:first-child {
-    margin-left: 10px;
-
-}
-
-header nav a:hover {
+&:hover {
   text-decoration: underline;
-}
 
-@media (max-width: 500px) {
-    header nav a:hover {
-        text-decoration: none;
-    }
+  @media @mobile {
+      text-decoration: none;
+  }
 }
-
-header nav a:first-child {
-  margin-left: 0;
-}
-
-header nav a:last-child {
-  margin-right: 0;
 }

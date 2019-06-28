@@ -149,10 +149,8 @@ body {
   height: 180px;
   border: none;
   position: relative;
-  top: 430px;
+  top: 375px;
   align-self: center;
-  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 18px 40px -12px rgba(51, 158, 249, 0.4);
-  background-image: linear-gradient(to left, #339EF9, #6CD6FA);
 }
 @media (max-width: 500px) {
   .welcomeContainer .topButton {
@@ -176,7 +174,7 @@ body {
   justify-self: center;
   position: relative;
   border: none;
-  top: 150px;
+  top: 90px;
   box-shadow: 0 18px 40px -12px rgba(212, 212, 212, 0.5);
 }
 @media (max-width: 500px) {
@@ -186,10 +184,11 @@ body {
     color: white;
     border: none;
     top: 55px;
+    padding-bottom: 20px;
   }
 }
 /* Footer */
-footer {
+.homeFooter {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -200,7 +199,7 @@ footer {
   box-shadow: 0 -1px 4px 0 rgba(212, 212, 212, 0.5);
 }
 @media (max-width: 500px) {
-  footer {
+  .homeFooter {
     display: none;
   }
 }
@@ -226,10 +225,6 @@ footer nav a {
   font-weight: bold;
   color: #339EF9;
   text-decoration: none;
-}
-/* Make sure to toggle visibility for final product! */
-footer p {
-  visibility: hidden;
 }
 /* Images */
 .desktopXR {
@@ -284,37 +279,37 @@ footer p {
 .welcomeContainer .welcomeContent #title {
   font-family: 'Open Sans';
   font-size: 64px;
-  font-weight: 500;
-  letter-spacing: 0.87px;
+  font-weight: bold;
+  line-height: 87px;
+  letter-spacing: 0.8px;
   color: #339EF9;
 }
 @media (max-width: 500px) {
   .welcomeContainer .welcomeContent #title {
     font-size: 36px;
     font-weight: 600;
-    letter-spacing: 0.8px;
+    line-height: 49px;
   }
 }
 .welcomeContainer .welcomeContent #subtitle {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-size: 40px;
   font-weight: normal;
+  line-height: 54px;
   color: #339EF9;
   padding-top: 4px;
 }
 @media (max-width: 500px) {
   .welcomeContainer .welcomeContent #subtitle {
     font-size: 24px;
-    color: black;
+    line-height: 32px;
+    color: #4E4E4E;
   }
 }
 /* Main Content Section */
 .mainContent {
   width: 100%;
   height: 1277px;
-  background: url(/images/iPhoneXR.svg);
-  background-repeat: no-repeat;
-  background-position: -20px, 290px;
   background-color: #F7F7F7;
   color: #339EF9;
   display: flex;
@@ -330,14 +325,33 @@ footer p {
     margin-bottom: 50px;
   }
 }
+.mainContent .middleContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 62%;
+  margin: auto;
+  padding-top: 290px;
+}
+@media (max-width: 500px) {
+  .mainContent .middleContainer {
+    width: 75%;
+    padding-top: 80px;
+  }
+}
+.mainContent .middleContainer img {
+  size: 447px 926px;
+}
+@media (max-width: 500px) {
+  .mainContent .middleContainer img {
+    display: none;
+  }
+}
 .mainContent .missionStatement {
-  width: 251px;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 290px;
-  margin-left: 412px;
-  margin-right: 361px;
+  padding-left: 30px;
 }
 @media (max-width: 500px) {
   .mainContent .missionStatement {
@@ -351,7 +365,6 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   align-content: center;
 }
 @media (max-width: 500px) {
@@ -360,14 +373,13 @@ footer p {
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    padding-left: 55px;
-    padding-right: 55px;
   }
 }
 .mainContent .missionStatement #feature {
   font-family: 'Open Sans';
   font-size: 50px;
   font-weight: bold;
+  line-height: 64px;
   margin-bottom: 30px;
   align-items: left;
 }
@@ -378,31 +390,34 @@ footer p {
 }
 .mainContent .missionStatement .indyContent .indyHeader {
   font-family: 'Open Sans';
-  font-size: 21px;
+  font-size: 24px;
   font-weight: bold;
+  line-height: 31px;
   padding-top: 92px;
 }
 @media (max-width: 500px) {
   .mainContent .missionStatement .indyContent .indyHeader {
-    font-size: 24px;
     font-weight: 600;
     padding-top: 38.5px;
   }
 }
 .mainContent .missionStatement .indyContent .indyInfo {
   font-family: 'Nunito';
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  padding-top: 11px;
   line-height: 24px;
+  padding-top: 11px;
+  color: #4E4E4E;
 }
 @media (max-width: 500px) {
   .mainContent .missionStatement .indyContent .indyInfo {
-    font-size: 18px;
     font-weight: normal;
     padding-top: 8px;
-    color: black;
+    color: #4E4E4E;
   }
+}
+.container {
+  height: auto;
 }
 .aboutContainer {
   background: url(/images/Desktop\ About\ Graphic.svg);
@@ -411,11 +426,17 @@ footer p {
   background-position: 100% -70px;
   background-color: white;
 }
+@media (max-width: 500px) {
+  .aboutContainer {
+    background-size: contain;
+    background-position: 100% 0px;
+  }
+}
 .aboutContainer .aboutTitle #title {
   font-family: 'Roboto';
   font-size: 36px;
   color: #339EF9;
-  font-weight: 500;
+  font-weight: bold;
   margin-left: 72px;
   padding-top: 480px;
 }
@@ -426,9 +447,61 @@ footer p {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .aboutContainer .aboutWrapper {
+    width: 60%;
+    align-items: center;
+  }
+}
 .aboutContainer .aboutWrapper .smallContentContainer {
-  border: 1px solid black;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .aboutContainer .aboutWrapper .smallContentContainer {
+    flex-direction: column;
+    width: 100%;
+    align-items: space-around;
+  }
+}
+.aboutContainer .aboutWrapper .smallContentContainer .aboutHeader {
+  font-family: 'Nunito';
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: 0.53px;
+  color: #4E4E4E;
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .aboutContainer .aboutWrapper .smallContentContainer .aboutHeader {
+    font-family: "Open Sans";
+    font-weight: 600;
+    line-height: 31px;
+    color: #339EF9;
+    width: 100%;
+  }
+}
+.aboutContainer .aboutWrapper .smallContentContainer .aboutContent {
+  font-family: 'Nunito';
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: 0.53px;
+  color: #4E4E4E;
+  width: 60%;
+  line-height: 32px;
+  padding-bottom: 44px;
+}
+@media (max-width: 500px) {
+  .aboutContainer .aboutWrapper .smallContentContainer .aboutContent {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: normal;
+    width: 100%;
+  }
+}
+.aboutContainer .aboutWrapper .smallContentContainer #lastEntry {
+  padding-bottom: 115px;
 }
 .meetTheTeam {
   background: url(/images/People.svg);
@@ -436,6 +509,11 @@ footer p {
   background-size: 663px 227px contain;
   background-repeat: no-repeat;
   background-position: 50% 100px;
+}
+@media (max-width: 500px) {
+  .meetTheTeam {
+    background: white;
+  }
 }
 .meetTheTeam h2 {
   font-family: 'Open Sans';
@@ -445,24 +523,65 @@ footer p {
   margin-left: 72px;
   padding-top: 460px;
 }
+@media (max-width: 500px) {
+  .meetTheTeam h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-left: 0px;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
 .meetTheTeam .team {
   display: flex;
   flex-direction: column;
-  padding-left: 418px;
+  width: 80%;
 }
-.meetTheTeam .team #victor {
-  background-size: 243px 205px;
-  background-repeat: no-repeat;
-  background-position: 50px 100px;
+@media (max-width: 500px) {
+  .meetTheTeam .team {
+    width: 100%;
+  }
 }
 .meetTheTeam .team .teamMembers {
-  padding-top: 152px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  padding-left: 183px;
+}
+.meetTheTeam .team .teamMembers:first-child {
+  padding-top: 50px;
+}
+@media (max-width: 500px) {
+  .meetTheTeam .team .teamMembers {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 0px;
+    margin: auto;
+  }
+}
+.meetTheTeam .team .teamMembers .profileContainer {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 .meetTheTeam .team .teamMembers .name {
   font-family: 'Open Sans';
   font-size: 36px;
   color: #339EF9;
   font-weight: bold;
+  text-decoration: none;
+}
+.meetTheTeam .team .teamMembers .name:hover {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .meetTheTeam .team .teamMembers .name {
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+  }
 }
 .meetTheTeam .team .teamMembers #firstName {
   padding-top: 34px;
@@ -473,6 +592,15 @@ footer p {
   color: #4E4E4E;
   font-weight: bold;
   padding-top: 19px;
+}
+@media (max-width: 500px) {
+  .meetTheTeam .team .teamMembers .role {
+    font-size: 18px;
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }
 header {
   width: 100%;
@@ -518,16 +646,19 @@ header nav:last-child {
 header nav a {
   font-family: 'Open Sans';
   font-size: 30px;
+  font-weight: normal;
+  letter-spacing: -0.96px;
+  line-height: 41px;
   color: #339EF9;
   text-decoration: none;
 }
 @media (max-width: 500px) {
   header nav a {
     font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.77px;
+    line-height: 33px;
   }
-}
-header nav a:first-child {
-  margin-left: 10px;
 }
 header nav a:hover {
   text-decoration: underline;
@@ -536,10 +667,4 @@ header nav a:hover {
   header nav a:hover {
     text-decoration: none;
   }
-}
-header nav a:first-child {
-  margin-left: 0;
-}
-header nav a:last-child {
-  margin-right: 0;
 }
